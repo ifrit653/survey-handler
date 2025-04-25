@@ -1,0 +1,38 @@
+# Environnements virtuels
+venv/
+ENV/
+env/
+.venv/
+
+thisenv/
+
+# Fichiers Python compilés
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs
+*.log
+
+# Configs d’environnement
+.env
+
+# Bases de données SQLite locales
+*.sqlite3
+*.db
+
+# Migrations (optionnel si tu veux cleaner les fichiers générés à chaque init)
+migrations/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# fichiers MacOS / Windows
+.DS_Store
+Thumbs.db
