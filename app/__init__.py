@@ -18,8 +18,9 @@ def create_app():
     
     db.init_app(app)
     migrate.init_app(app, db)
-
+    from app import models
     from app.routes import bp as api_bp
     app.register_blueprint(api_bp)
 
     return app
+

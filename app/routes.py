@@ -3,13 +3,16 @@ from app.models import db, Feedback
 from datetime import datetime
 
 bp = Blueprint('routes', __name__)
-
 # Simule une prédiction (à remplacer par appel à ton modèle)
 def predict_sentiment(text, aspect):
     # Ici on appellera ton modèle BERT fine-tuné
     return "neutral"  # exemple
 
 # Route : prédiction
+@bp.route('/', methods = ['GET'])
+def hello():
+    return jsonify({'message': "hello world"}), 201
+
 @bp.route('/api/predict', methods=['POST'])
 def predict():
     data = request.get_json()
